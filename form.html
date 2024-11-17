@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Survey Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Survey Form</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form">
+            <h2>Survey</h2>
+            <p>Please sign in with your Gmail account to access the survey form.</p>
+
+            <!-- Google Sign-In Button will appear here -->
+            <div id="signin-button"></div>
+
+            <!-- Survey Form that is initially hidden -->
+            <form id="survey-form" style="display:none;">
+                <label for="question1">How satisfied are you with our website?</label><br>
+                <input type="radio" name="question1" value="Very satisfied"> Very satisfied<br>
+                <input type="radio" name="question1" value="Somewhat satisfied"> Somewhat satisfied<br>
+                <input type="radio" name="question1" value="Not satisfied"> Not satisfied<br><br>
+
+                <label for="question2">What can we improve?</label><br>
+                <textarea name="question2" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Simple Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
